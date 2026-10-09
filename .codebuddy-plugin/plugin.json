@@ -1,0 +1,37 @@
+{
+  "name": "ecomflow-ai",
+  "version": "1.0.0",
+  "description": "WorkBuddy expert for human assisted cross-border ecommerce customer service.",
+  "author": {"name": "EcomFlow AI", "email": "maintainer@example.invalid"},
+  "agents": ["./agents/ecomflow-customer-service.md"],
+  "agentName": "ecomflow-customer-service",
+  "expertType": "agent",
+  "skills": [
+    "./skills/ecomflow-product-support",
+    "./skills/ecomflow-order-logistics",
+    "./skills/ecomflow-after-sales"
+  ],
+  "displayName": {"zh": "EcomFlow AI 客服", "en": "EcomFlow AI Support"},
+  "profession": {"zh": "跨境电商客服助手", "en": "Cross-border Ecommerce Support Assistant"},
+  "displayDescription": {
+    "zh": "协助跨境电商客服识别买家诉求，核查商品、订单、物流和售后资料，生成中文说明与美式英文回复。",
+    "en": "Helps human agents verify ecommerce facts with available tools and draft concise US English customer replies."
+  },
+  "avatar": "avatars/ecomflow.png",
+  "categoryId": "07-SalesCommerce",
+  "defaultInitPrompt": {
+    "zh": "请判断这条英文买家咨询，并在核查可用数据后起草英文回复。",
+    "en": "Classify this buyer question, verify available data, and draft a reply."
+  },
+  "plugin": "ecomflow-ai",
+  "tags": [
+    {"zh": "跨境客服", "en": "Ecommerce Support"},
+    {"zh": "订单物流", "en": "Orders and Shipping"},
+    {"zh": "售后处理", "en": "After-sales"}
+  ],
+  "quickPrompts": [
+    {"zh": "请判断这条英文买家咨询，并在核查可用数据后起草英文回复。", "en": "Classify this buyer question, verify available data, and draft a reply."},
+    {"zh": "请处理一条关于尺码和库存的咨询。", "en": "Handle a size and stock question."},
+    {"zh": "请处理一条退款申请，并判断是否需人工审核。", "en": "Handle a refund request and decide whether to escalate."}
+  ]
+}
