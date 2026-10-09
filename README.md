@@ -2,6 +2,14 @@
 
 本项目是供 WorkBuddy 运行的客服专家定义与三个业务 Skill。Codex 负责维护文件；人工客服在 WorkBuddy 输入买家英文问题，核对英文草稿后自行发回 TikTok Shop、Amazon 等平台。项目不包含聊天网站、Agent 运行程序、数据库或数据连接器。
 
+## 快速开始
+
+1. 在 GitHub 点 **Code → Download ZIP** 并解压项目。
+2. 在飞书创建含商品、SKU 和订单测试记录的多维表格；在 WorkBuddy 授权并启用飞书连接器。
+3. 在 WorkBuddy 选择解压后的项目根目录作为工作空间，发送教程中的启动话术，再粘贴买家的英文问题。
+
+📖 **[查看四张截图和可复制的完整上手教程](docs/quickstart.md)**。连接飞书与选择工作空间可以互换先后；关键是开始查询前，两者都已就绪。
+
 ## 当前状态
 
 | 状态                 | 当前结果 | 验证方式                                                  |
@@ -18,9 +26,10 @@
 - `skills/ecomflow-order-logistics/`：订单和物流。
 - `skills/ecomflow-after-sales/`：售后和退款。
 - `prompts/output-template.md`：输出模板及练习问题。
+- `docs/quickstart.md`：带四张截图的下载、飞书连接和启动教程。
 - `PROJECT_RULES.md`：边界和状态说明。
 - `dist/`：供 WorkBuddy “上传技能”使用的三个 ZIP 包（各自根目录都有 `SKILL.md`），以及供后续按开放平台官方渠道提交的专家包 ZIP。
-- `tests/workbuddy-manual-cases.md`：七条 WorkBuddy 手工验收用例。
+- `tests/workbuddy-manual-cases.md`：七条无工具案例和一条已授权查询案例。
 
 ## 在 WorkBuddy 打开和启用
 
