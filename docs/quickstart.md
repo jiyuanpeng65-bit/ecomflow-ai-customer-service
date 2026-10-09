@@ -21,7 +21,7 @@
 
 ![第一步：启用飞书连接器](images/01-feishu-connector.png)
 
-**必须实际试读一条多维表格记录。**连接图标已开启，只能说明连接器启用；仍需确认当前工具能读取该表格记录、你的账号有读取权限，并且查询结果确实来自这张表。如果只能收发飞书消息，尚不足以回答商品和订单问题。WorkBuddy 的[连接器说明](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Connector)列出了授权和启用入口；具体可用工具以你当前安装的连接器为准。
+**必须实际试读一条多维表格记录。** 连接图标已开启，只能说明连接器启用；仍需确认当前工具能读取该表格记录、你的账号有读取权限，并且查询结果确实来自这张表。如果只能收发飞书消息，尚不足以回答商品和订单问题。WorkBuddy 的[连接器说明](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Connector)列出了授权和启用入口；具体可用工具以你当前安装的连接器为准。
 
 ## 第二步：选择项目文件夹作为工作空间
 
@@ -29,7 +29,7 @@
 
 ![第二步：打开下载后的项目文件夹](images/02-workspace-folder.png)
 
-选择工作空间后，WorkBuddy 才能按需读取项目文件。**打开文件夹并不等于已安装专家或 Skill。**想在「我的专家」中直接召唤 `EcomFlow AI 客服`，还需按 [README 的完整安装步骤](../README.md#在-workbuddy-打开和启用)导入三个 Skill 并注册专家。先体验时，可以直接使用下一步的启动话术。[WorkBuddy 工作空间说明](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar)也介绍了本地文件夹选择方式。
+选择工作空间后，WorkBuddy 才能按需读取项目文件。**打开文件夹并不等于已安装专家或 Skill。** 想在「我的专家」中直接召唤 `EcomFlow AI 客服`，还需按 [README 的完整安装步骤](../README.md#在-workbuddy-打开和启用)导入三个 Skill 并注册专家。先体验时，可以直接使用下一步的启动话术。[WorkBuddy 工作空间说明](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Task-Bar)也介绍了本地文件夹选择方式。
 
 ## 第三步：在新对话发送一次启动话术
 
@@ -51,7 +51,7 @@
 
 ## 第四步：发买家问题，核对结果
 
-可以先用你表格中**确实存在的测试订单**试问。例如，若你建立了 `DEMO-1002` 这条测试记录：
+可以先用你表格中 **确实存在的测试订单** 试问。例如，若你建立了 `DEMO-1002` 这条测试记录：
 
 ```text
 Hi, I placed an order for a gray hoodie a few days ago. My order number is DEMO-1002. Could you please check the current status of my order? Has it been shipped yet? Thanks!
@@ -64,3 +64,4 @@ Hi, I placed an order for a gray hoodie a few days ago. My order number is DEMO-
 截图中这次示例显示约 **0.92 积分**；实际消耗会随模型、问题和上下文变化。WorkBuddy 的[连接器说明](https://www.workbuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Connector)指出，连接器读写本身不消耗积分，但模型理解、汇总外部数据会消耗积分。
 
 遇到「查不到数据」时，先核对：当前对话是否启用了飞书连接器、该工具是否支持读取**多维表格记录**、账号是否有该表格的读取权限，以及测试订单号或 SKU 是否真的存在。连接器和飞书授权属于你自己的 WorkBuddy 环境，下载仓库不会自动复制它们。
+
